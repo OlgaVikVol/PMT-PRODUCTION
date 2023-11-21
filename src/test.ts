@@ -1,5 +1,5 @@
-export function someFn(arg: number): string {
-    console.log('RANDOM FUNCTION');
-
-    return '';
-}
+describe ('classNames', () =>{
+	test('test', () =>{
+		expect(true).toBe(true)
+	})
+})
