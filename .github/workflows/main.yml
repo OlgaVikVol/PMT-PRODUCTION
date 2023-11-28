@@ -114,7 +114,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: install modules
         run: npm ci
-        - name: build production project
+      - name: build production project
         run: npm run build:prod
         if: always()
       - name: linting typescript
