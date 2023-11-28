@@ -9,4 +9,4 @@ export function classNames(cls: string, mods: Mods = {}, additional: string[] = 
             .map(([className]) => className),
     ]
         .join(' ');
-};
+}

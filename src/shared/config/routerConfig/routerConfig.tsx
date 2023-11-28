@@ -6,7 +6,7 @@ import { RouteProps } from 'react-router-dom';
 export enum AppRouters {
 MAIN = 'main',
 ABOUT = 'about',
-NOT_FOUND = "not_found"
+NOT_FOUND = 'not_found'
 }
 
 export const RoutePath: Record<AppRouters, string> = {
