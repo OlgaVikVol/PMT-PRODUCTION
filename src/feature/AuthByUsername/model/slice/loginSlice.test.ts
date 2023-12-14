@@ -21,6 +21,6 @@ describe('loginSlice.test', () => {
         expect(loginReducer(
           state as LoginSchema,
           loginActions.setPassword('123'),
-        )).toBe({ password: '123' });
+        )).toEqual({ password: '123' });
     });
 });
