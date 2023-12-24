@@ -7,5 +7,13 @@
   "Короткий язык": "En",
   "increment": "increment",
   "decrement": "decrement",
-  "PROFILE PAGE": "PROFILE PAGE"
+  "PROFILE PAGE": "PROFILE PAGE",
+  "profile.Cancel": "Cancel",
+  "profile.Save": "Save",
+  "profile.Your age": "Your age",
+  "profile.City": "City",
+  "profile.Username": "Username",
+  "profile.Avatar": "Avatar",
+  "Currency": "Choose currency",
+  "Choose country": "Choose country"
 }

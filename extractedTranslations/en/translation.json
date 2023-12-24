@@ -1,11 +1,21 @@
 {
+  "": "",
   " Введите username ": " Введите username ",
+  "Avatar": "Avatar",
+  "Cancel": "Cancel",
+  "Choose country": "Choose country",
+  "City": "City",
+  "Currency": "Currency",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
       "": ""
     }
   },
   "PROFILE PAGE": "PROFILE PAGE",
+  "Save": "Save",
+  "User": "User",
+  "Username": "Username",
+  "Your age": "Your age",
   "decrement": "decrement",
   "increment": "increment",
   "throw error": "throw error",
@@ -22,7 +32,9 @@
   "О сайте": "О сайте",
   "Обновить страницу": "Обновить страницу",
   "Переключить": "Переключить",
+  "Попробуйте обновить страницу": "Попробуйте обновить страницу",
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
+  "Произошла ошибка при загрузке профиля": "Произошла ошибка при загрузке профиля",
   "Профиль": "Профиль",
   "Редактировать": "Редактировать",
   "Страница не найдена": "Страница не найдена",
