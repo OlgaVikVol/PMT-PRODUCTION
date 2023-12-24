@@ -14,5 +14,10 @@
   "profile.Username": "Введите имя пользователя",
   "profile.Avatar": "Введите ссылку на аватар",
   "Currency": "Укажите валюту",
-  "Choose country": "Укажите страну"
+  "Choose country": "Укажите страну",
+  "Server error": "Серверная ошибка при сохранении",
+  "Incorrect country": "Некорректный регион'",
+  "No data": "Данные не указаны",
+  "First and last name are required": "Имя и фамилия обязательны",
+  "Incorrect age": "Некорректный возраст"
 }

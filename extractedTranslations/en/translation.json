@@ -6,13 +6,19 @@
   "Choose country": "Choose country",
   "City": "City",
   "Currency": "Currency",
+  "First and last name are required": "First and last name are required",
+  "Incorrec": "Incorrec",
+  "Incorrect age": "Incorrect age",
+  "Incorrect country": "Incorrect country",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
       "": ""
     }
   },
+  "No data": "No data",
   "PROFILE PAGE": "PROFILE PAGE",
   "Save": "Save",
+  "Server error": "Server error",
   "User": "User",
   "Username": "Username",
   "Your age": "Your age",
@@ -29,6 +35,10 @@
   "Выйти": "Выйти",
   "Главная": "Главная",
   "Главная страница": "Главная страница",
+  "Данные не указаны": "Данные не указаны",
+  "Имя и фамилия обязательны": "Имя и фамилия обязательны",
+  "Некорректный возраст": "Некорректный возраст",
+  "Некорректный регион": "Некорректный регион",
   "О сайте": "О сайте",
   "Обновить страницу": "Обновить страницу",
   "Переключить": "Переключить",
@@ -37,6 +47,7 @@
   "Произошла ошибка при загрузке профиля": "Произошла ошибка при загрузке профиля",
   "Профиль": "Профиль",
   "Редактировать": "Редактировать",
+  "Серверная ошибка при сохранении": "Серверная ошибка при сохранении",
   "Страница не найдена": "Страница не найдена",
   "Форма авторизации": "Auth form",
   "Язык": "Язык"

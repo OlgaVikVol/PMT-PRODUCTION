@@ -15,5 +15,10 @@
   "profile.Username": "Username",
   "profile.Avatar": "Avatar",
   "Currency": "Choose currency",
-  "Choose country": "Choose country"
+  "Choose country": "Choose country",
+  "Server error": "Server error",
+  "Incorrect country": "Incorrect country",
+  "No data": "No data",
+  "First and last name are required": "First and last name are required",
+  "Incorrect age": "Incorrect age"
 }
