@@ -1,5 +1,3 @@
-import { fetchProfileData } from './model/services/fetchProfileData/fetchProfileData';
-
 export {
     Profile,
     ProfileSchema,

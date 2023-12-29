@@ -20,5 +20,9 @@
   "Incorrect country": "Incorrect country",
   "No data": "No data",
   "First and last name are required": "First and last name are required",
-  "Incorrect age": "Incorrect age"
+  "Incorrect age": "Incorrect age",
+  "profile.Error during the loading": "Error during the loading",
+  "profile.Reset the page later": "Reset the page later",
+  "profile.Your name": "Your name",
+  "profile.Your lastname": "Your lastname"
 }

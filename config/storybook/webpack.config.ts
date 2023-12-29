@@ -10,6 +10,14 @@ export default ({ config }: {config: webpack.Configuration}) => {
         entry: '',
         src: path.resolve(__dirname, '..', '..', 'src'),
     };
+    /* исправление ошибки storybook */
+    if (config!.resolve!.modules) {
+    config!.resolve!.modules = [
+        path.resolve(__dirname, '../../src'),
+        'node_modules',
+    ];
+    }
+
     config!.resolve!.modules!.push(paths.src);
     config!.resolve!.extensions!.push('.ts', '.tsx');
 
@@ -32,6 +40,7 @@ export default ({ config }: {config: webpack.Configuration}) => {
     config!.plugins!.push(new DefinePlugin({
         __IS_DEV__: JSON.stringify(true),
         __API__: JSON.stringify(''),
+        __PROJECT__: JSON.stringify('storybook'),
     }));
 
     return config;

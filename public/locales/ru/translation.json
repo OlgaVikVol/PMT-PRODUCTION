@@ -19,5 +19,9 @@
   "Incorrect country": "Некорректный регион'",
   "No data": "Данные не указаны",
   "First and last name are required": "Имя и фамилия обязательны",
-  "Incorrect age": "Некорректный возраст"
+  "Incorrect age": "Некорректный возраст",
+  "profile.Error during the loading": "Произошла ошибка при загрузке профиля",
+  "profile.Reset the page later": "Попробуйте обновить страницу",
+  "profile.Your name": "Ваше имя",
+  "profile.Your lastname": "Ваша фамилия"
 }
