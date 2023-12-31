@@ -24,5 +24,7 @@
   "profile.Error during the loading": "Error during the loading",
   "profile.Reset the page later": "Reset the page later",
   "profile.Your name": "Your name",
-  "profile.Your lastname": "Your lastname"
+  "profile.Your lastname": "Your lastname",
+  "article.Comments": "Comments",
+  "No comments": "No comments"
 }

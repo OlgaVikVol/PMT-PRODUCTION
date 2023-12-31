@@ -23,5 +23,7 @@
   "profile.Error during the loading": "Произошла ошибка при загрузке профиля",
   "profile.Reset the page later": "Попробуйте обновить страницу",
   "profile.Your name": "Ваше имя",
-  "profile.Your lastname": "Ваша фамилия"
+  "profile.Your lastname": "Ваша фамилия",
+  "article.Comments": "Комментарии",
+  "No comments": "Комментарии отсутствуют"
 }
