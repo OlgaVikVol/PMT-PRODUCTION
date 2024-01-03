@@ -9,6 +9,7 @@
   "Articles": "Articles",
   "Atr": "Atr",
   "Avatar": "Avatar",
+  "Back to the lists of articles": "Back to the lists of articles",
   "Cancel": "Cancel",
   "Choose country": "Choose country",
   "City": "City",
@@ -30,6 +31,13 @@
   "No comments": "No comments",
   "No data": "No data",
   "PROFILE PAGE": "PROFILE PAGE",
+  "Read more": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Reset the page": "Reset the page",
   "Reset the page later": "Reset the page later",
   "Save": "Save",
