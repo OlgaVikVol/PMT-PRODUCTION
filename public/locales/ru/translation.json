@@ -30,5 +30,15 @@
   "Send": "Отправить",
   "Inter the text of the comment": "Введите текст комментария",
   "Read more": "Читать далее",
-  "article.Back to the lists of articles": "Назад к списку"
+  "article.Back to the lists of articles": "Назад к списку",
+  "Sort": "Сортировать",
+  "Sort BY": "Сортировать ПО",
+  "Search": "Поиск",
+  "BY": "ПО",
+  "In": "ПО",
+  "ascending order": "возрастанию",
+  "descending order": "убыванию",
+  "date": "дате создания",
+  "name": "названию",
+  "views": "просмотрам"
 }

@@ -31,5 +31,15 @@
   "Send": "Send",
   "Inter the text of the comment": "Inter the text of the comment",
   "Read more": "Read more",
-  "article.Back to the lists of articles": "Back to the lists of articles"
+  "article.Back to the lists of articles": "Back to the lists of articles",
+  "Sort": "Sort",
+  "Sort BY": "Sort BY",
+  "Search": "Search",
+  "BY": "BY",
+  "In": "In",
+  "ascending order": "ascending order",
+  "descending order": "descending order",
+  "date": "date",
+  "name": "name",
+  "views": "views"
 }
