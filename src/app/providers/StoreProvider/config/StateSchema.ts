@@ -13,10 +13,12 @@ import { ArticleDetailsCommentsSchema } from 'pages/ArticleDetailsPage';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
 import { LoginSchema } from 'feature/AuthByUsername';
 import { AddCommentFormSchema } from 'feature/addCommentForm';
+import { UISchema } from 'feature/UI';
 
 export interface StateSchema {
     counter: CounterSchema;
     user: UserSchema;
+    ui: UISchema;
 
     // Асинхронные редюсеры
     loginForm?: LoginSchema;
