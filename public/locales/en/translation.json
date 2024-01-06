@@ -41,5 +41,6 @@
   "descending order": "descending order",
   "date": "date",
   "name": "name",
-  "views": "views"
+  "views": "views",
+  "IN": "IN"
 }
