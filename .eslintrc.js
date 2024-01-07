@@ -53,6 +53,7 @@ module.exports = {
         'react/jsx-props-no-spreading': 'off',
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
+        'arrow-body-style': 'off',
     },
     globals: {
         __IS_DEV__: true,
