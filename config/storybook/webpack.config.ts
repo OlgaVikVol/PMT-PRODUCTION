@@ -9,6 +9,8 @@ export default ({ config }: {config: webpack.Configuration}) => {
         html: '',
         entry: '',
         src: path.resolve(__dirname, '..', '..', 'src'),
+        locales: '',
+        buildLocales: '',
     };
     /* исправление ошибки storybook */
     if (config!.resolve!.modules) {
