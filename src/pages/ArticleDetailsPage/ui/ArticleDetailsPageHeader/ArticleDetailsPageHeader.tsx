@@ -30,7 +30,7 @@ export const ArticleDetailsPageHeader = memo(({ className }: ArticleDetailsPageH
     return (
         <div className={classNames(cls.ArticleDetailsPageHeader, {}, [className])}>
             <Button theme={ButtonTheme.OUTLINE} onClick={onBackToList}>
-                {t('Назад к списку')}
+                {t('Back to the list')}
             </Button>
             {canEdit && (
                 <Button
@@ -38,7 +38,7 @@ export const ArticleDetailsPageHeader = memo(({ className }: ArticleDetailsPageH
                     theme={ButtonTheme.OUTLINE}
                     onClick={onEditArticle}
                 >
-                    {t('Редактировать')}
+                    {t('Edit')}
                 </Button>
             )}
         </div>

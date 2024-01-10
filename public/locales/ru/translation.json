@@ -41,5 +41,21 @@
   "date": "дате создания",
   "name": "названию",
   "views": "просмотрам",
-  "IN": "ПО"
+  "IN": "ПО",
+  "No articles found": "Статьи не найдены",
+  "All articles": "Все статьи",
+  "IT": "Айти",
+  "The science": "Наука",
+  "Increment": "Увеличить",
+  "profile.Inter your name": "Ваше имя",
+  "profile.Inter your surname": "Ваша фамилия",
+  "profile.Age": "Ваш возраст",
+  "profile.Avatar link": "Введите ссылку на аватар",
+  "about.About": "О сайте",
+  "article-details.Recommendations": "Рекомендуем",
+  "Back to the list": "Назад к списку",
+  "Edit": "Редактировать",
+  "Editing an article": "Редактирование статьи с ID =",
+  "Creating a new article": "Создание новой статьи",
+  "The page was not found": "Страница не найдена"
 }

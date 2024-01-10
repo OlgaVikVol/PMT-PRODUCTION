@@ -68,7 +68,7 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
                 <Text
                     size={TextSize.L}
                     className={cls.commentTitle}
-                    title={t('Рекомендуем')}
+                    title={t('Recommendations')}
                 />
                 <ArticleList
                     articles={recommendations}
@@ -80,7 +80,7 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
                 <Text
                     size={TextSize.L}
                     className={cls.commentTitle}
-                    title={t('Комментарии')}
+                    title={t('Comments')}
                 />
                 <AddCommentForm onSendComment={onSendComment} />
                 <CommentList
