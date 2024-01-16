@@ -7,7 +7,7 @@ import { getUserAuthData, userActions } from 'entities/User';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import { RoutePath } from 'shared/config/routerConfig/routerConfig';
-import { LoginModal } from 'feature/AuthByUsername';
+import { LoginModal } from 'features/AuthByUsername';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Dropdown } from 'shared/ui/Dropdown/Dropdown';
 import cls from './Navbar.module.scss';

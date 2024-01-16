@@ -10,15 +10,17 @@ import { To } from 'history';
 import { NavigateOptions } from 'react-router';
 import { ArticleDetailsSchema } from 'entities/Article';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
-import { LoginSchema } from 'feature/AuthByUsername';
-import { AddCommentFormSchema } from 'feature/addCommentForm';
-import { UISchema } from 'feature/UI';
+import { LoginSchema } from 'features/AuthByUsername';
+import { AddCommentFormSchema } from 'features/addCommentForm';
+import { UISchema } from 'features/UI';
 import { ArticleDetailsPageSchema } from 'pages/ArticleDetailsPage/model/types';
+import { rtkApi } from 'shared/api/rtkApi';
 
 export interface StateSchema {
     counter: CounterSchema;
     user: UserSchema;
     ui: UISchema;
+    [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>;
 
     // Асинхронные редюсеры
     loginForm?: LoginSchema;
