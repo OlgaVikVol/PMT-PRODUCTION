@@ -2,17 +2,17 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { ArticleRecommendationsList } from './ArticleRecommendationsList';
+import { EditableProfileCardHeader } from './EditableProfileCardHeader';
 
 export default {
-    title: 'features/ArticleRecommendationsList',
-    component: ArticleRecommendationsList,
+    title: 'features/editableProfileCard/EditableProfileCardHeader',
+    component: EditableProfileCardHeader,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as ComponentMeta<typeof ArticleRecommendationsList>;
+} as ComponentMeta<typeof EditableProfileCardHeader>;
 
-const Template: ComponentStory<typeof ArticleRecommendationsList> = (args) => <ArticleRecommendationsList {...args} />;
+const Template: ComponentStory<typeof EditableProfileCardHeader> = (args) => <EditableProfileCardHeader {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {};

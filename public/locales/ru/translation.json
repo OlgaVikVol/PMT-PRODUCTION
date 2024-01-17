@@ -58,5 +58,6 @@
   "Editing an article": "Редактирование статьи с ID =",
   "Creating a new article": "Создание новой статьи",
   "The page was not found": "Страница не найдена",
-  "Error during loading": "Ошибка при загрузке статей"
+  "Error during loading": "Ошибка при загрузке статей",
+  "profile.Profile not found": "Профиль не найден"
 }

@@ -61,5 +61,6 @@
   "Editing an article": "Editing an article with an ID =",
   "Creating a new article": "Creating a new article",
   "The page was not found": "The page was not found",
-  "Error during loading": "Error during loading"
+  "Error during loading": "Error during loading",
+  "profile.Profile not found": "Profile not found"
 }
