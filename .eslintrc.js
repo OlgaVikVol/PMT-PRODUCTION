@@ -4,7 +4,11 @@ module.exports = {
         es2021: true,
         jest: true,
     },
-    extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended', 'plugin:storybook/recommended', 'plugin:storybook/recommended'],
+    extends: [
+        'plugin:react/recommended',
+        'airbnb',
+        'plugin:i18next/recommended',
+    ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
@@ -18,7 +22,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
-        'olga-plugin',
+        'ulbi-tv-plugin',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -30,9 +34,10 @@ module.exports = {
         ],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
-        'no-unused-vars': 'warn',
+        'no-unused-vars': 'off',
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
+        'react/jsx-props-no-spreading': 'warn',
         'react/function-component-definition': 'off',
         'no-shadow': 'off',
         'import/extensions': 'off',
@@ -42,20 +47,21 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['as', 'role', 'data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap'],
+                ignoreAttribute: [
+                    'as', 'role', 'data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap',
+                ],
             },
         ],
-        'max-len': ['error', { ignoreComments: true, code: 180 }],
+        'max-len': ['error', { ignoreComments: true, code: 150 }],
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-        'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
+        'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies,
         'no-param-reassign': 'off',
-        'react/jsx-props-no-spreading': 'off',
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'olga-plugin/path-checker': 'error',
+        'ulbi-tv-plugin/path-checker': 'error',
     },
     globals: {
         __IS_DEV__: true,
