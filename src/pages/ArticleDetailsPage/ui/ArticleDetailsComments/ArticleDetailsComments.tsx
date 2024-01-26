@@ -14,7 +14,7 @@ import { addCommentForArticle } from '../../model/services/addCommentForArticle/
 
 interface ArticleDetailsCommentsProps {
   className?: string;
-  id: string;
+  id?: string;
 }
 
 export const ArticleDetailsComments = memo((props: ArticleDetailsCommentsProps) => {
@@ -25,10 +25,12 @@ export const ArticleDetailsComments = memo((props: ArticleDetailsCommentsProps) 
     const commentsIsLoading = useSelector(getArticleCommentsIsLoading);
 
     const onSendComment = useCallback((text: string) => {
+        // @ts-ignore
         dispatch(addCommentForArticle(text));
     }, [dispatch]);
 
     useInitialEffect(() => {
+        // @ts-ignore
         dispatch(fetchCommentsByArticleId(id));
     });
 
