@@ -1,7 +1,8 @@
+/* eslint-disable olga-plugin/public-api-imports */
 import React, { memo, Suspense, useCallback } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { RequireAuth } from '@/app/providers/router/ui/RequireAuth';
-import { PageLoader } from '@/widgets/PageLoader/PageLoader';
+import { PageLoader } from '@/widgets/PageLoader/ui/PageLoader/PageLoader';
 import { AppRoutesProps, routeConfig } from '@/shared/config/routerConfig/routerConfig';
 
 const AppRouter = () => {

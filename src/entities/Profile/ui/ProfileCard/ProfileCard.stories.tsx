@@ -1,3 +1,4 @@
+/* eslint-disable olga-plugin/public-api-imports */
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Country } from '@/entities/Country';

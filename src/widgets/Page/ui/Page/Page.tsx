@@ -1,5 +1,5 @@
 import {
-    memo, MutableRefObject, ReactNode, useRef, UIEvent,
+    memo, MutableRefObject, ReactNode, UIEvent, useRef,
 } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -13,10 +13,12 @@ import { useThrottle } from '@/shared/lib/hooks/useThrottle/useThrottle';
 import cls from './Page.module.scss';
 
 interface PageProps {
-    className?: string;
-    children: ReactNode;
-    onScrollEnd?: () => void;
+  className?: string;
+  children: ReactNode;
+  onScrollEnd?: () => void;
 }
+
+export const PAGE_ID = 'PAGE_ID';
 
 export const Page = memo((props: PageProps) => {
     const { className, children, onScrollEnd } = props;
@@ -28,14 +30,14 @@ export const Page = memo((props: PageProps) => {
         (state: StateSchema) => getUIScrollByPath(state, pathname),
     );
 
-    useInitialEffect(() => {
-        wrapperRef.current.scrollTop = scrollPosition;
-    });
-
     useInfiniteScroll({
         triggerRef,
         wrapperRef,
         callback: onScrollEnd,
+    });
+
+    useInitialEffect(() => {
+        wrapperRef.current.scrollTop = scrollPosition;
     });
 
     const onScroll = useThrottle((e: UIEvent<HTMLDivElement>) => {
@@ -50,6 +52,7 @@ export const Page = memo((props: PageProps) => {
             ref={wrapperRef}
             className={classNames(cls.Page, {}, [className])}
             onScroll={onScroll}
+            id={PAGE_ID}
         >
             {children}
             {onScrollEnd ? <div className={cls.trigger} ref={triggerRef} /> : null}

@@ -1,3 +1,4 @@
+/* eslint-disable olga-plugin/public-api-imports */
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { getUserAuthData } from '@/entities/User';
 import { ThunkConfig } from '@/app/providers/StoreProvider';

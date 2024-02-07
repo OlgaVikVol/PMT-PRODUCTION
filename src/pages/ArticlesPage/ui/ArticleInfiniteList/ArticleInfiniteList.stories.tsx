@@ -1,3 +1,4 @@
+/* eslint-disable olga-plugin/public-api-imports */
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 

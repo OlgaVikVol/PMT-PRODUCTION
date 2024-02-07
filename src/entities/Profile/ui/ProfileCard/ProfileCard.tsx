@@ -1,3 +1,4 @@
+/* eslint-disable olga-plugin/public-api-imports */
 import { useTranslation } from 'react-i18next';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import { Text, TextAlign, TextTheme } from '@/shared/ui/Text/Text';

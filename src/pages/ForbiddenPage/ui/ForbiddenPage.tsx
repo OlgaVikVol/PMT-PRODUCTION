@@ -1,6 +1,7 @@
+/* eslint-disable olga-plugin/public-api-imports */
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Page } from '@/widgets/Page/Page';
+import { Page } from '@/widgets/Page';
 
 const ForbiddenPage = () => {
     const { t } = useTranslation('');

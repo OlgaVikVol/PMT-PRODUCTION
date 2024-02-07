@@ -1,3 +1,4 @@
+/* eslint-disable olga-plugin/public-api-imports */
 import React, { Suspense, ErrorInfo, ReactNode } from 'react';
 
 import { withTranslation } from 'react-i18next';

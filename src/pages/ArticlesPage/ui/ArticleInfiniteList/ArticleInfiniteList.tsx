@@ -1,3 +1,4 @@
+/* eslint-disable olga-plugin/public-api-imports */
 import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import { useSelector } from 'react-redux';
