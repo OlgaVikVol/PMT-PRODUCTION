@@ -1,11 +1,8 @@
-/* eslint-disable olga-plugin/public-api-imports */
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
-import { Article, ArticleType } from '@/entities/Article';
-
-import { ArticleBlockType } from '@/entities/Article/model/consts/articleConsts';
+import { Article, ArticleBlockType, ArticleType } from '@/entities/Article';
 import { ArticleInfiniteList } from './ArticleInfiniteList';
 
 export default {

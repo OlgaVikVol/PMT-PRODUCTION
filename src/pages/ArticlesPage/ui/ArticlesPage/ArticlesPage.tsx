@@ -1,4 +1,3 @@
-/* eslint-disable olga-plugin/public-api-imports */
 import { useTranslation } from 'react-i18next';
 import { memo, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';

@@ -1,4 +1,3 @@
-/* eslint-disable olga-plugin/public-api-imports */
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
