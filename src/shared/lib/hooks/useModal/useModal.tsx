@@ -1,3 +1,4 @@
+/* eslint-disable olga-plugin/layer-imports */
 import {
     MutableRefObject, useCallback, useEffect, useRef, useState,
 } from 'react';

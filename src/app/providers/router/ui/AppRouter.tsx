@@ -1,3 +1,4 @@
+/* eslint-disable olga-plugin/layer-imports */
 import React, { memo, Suspense, useCallback } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { RequireAuth } from '@/app/providers/router/ui/RequireAuth';

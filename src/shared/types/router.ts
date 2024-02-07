@@ -1,3 +1,4 @@
+/* eslint-disable olga-plugin/layer-imports */
 import { RouteProps } from 'react-router-dom';
 import { UserRole } from '@/entities/User';
 

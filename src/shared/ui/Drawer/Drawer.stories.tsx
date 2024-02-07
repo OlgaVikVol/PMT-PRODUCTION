@@ -1,7 +1,5 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-
-import '@/app/styles/index.scss';
 import { Drawer } from './Drawer';
 
 export default {
