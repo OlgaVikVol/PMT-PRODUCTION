@@ -1,5 +1,5 @@
-import React, {
-    FC, useMemo, useState, ReactNode,
+import {
+    useMemo, useState, ReactNode,
 } from 'react';
 import { LOCAL_STORAGE_THEME_KEY } from '@/shared/const/localstorage';
 import { Theme } from '@/shared/const/theme';

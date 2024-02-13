@@ -1,6 +1,4 @@
 import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
-import { To } from 'history';
-import { NavigateOptions } from 'react-router';
 import { CombinedState, Reducer } from 'redux';
 import { $api } from '@/shared/api/api';
 import { uiReducer } from '@/features/UI';
