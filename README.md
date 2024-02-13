@@ -192,8 +192,6 @@ Clear.args = {
 - [AuthByUsername](/src/features/AuthByUsername)
 - [avatarDropdown](/src/features/avatarDropdown)
 - [editableProfileCard](/src/features/editableProfileCard)
-- [LangSwitcher](/src/features/LangSwitcher)
 - [notificationButton](/src/features/notificationButton)
 - [profileRating](/src/features/profileRating)
-- [ThemeSwitcher](/src/features/ThemeSwitcher)
 - [UI](/src/features/UI)
