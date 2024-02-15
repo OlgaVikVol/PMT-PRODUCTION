@@ -537,6 +537,123 @@
           ]
         }
       ]
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "oYMSKBk"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "-osqLXt"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "3V9dntF"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "X4H4qyL"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "2QLgu5J"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "Kva2FNe"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "8BglPUF"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "E5uySB3"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "CSoaig7"
     }
   ],
   "comments": [
@@ -673,6 +790,17 @@
       "city": "Moscow",
       "username": "ulbi tv",
       "avatar": "https://flomaster.top/uploads/posts/2023-10/1697572161_flomaster-top-p-programmist-illyustratsiya-vkontakte-1.jpg"
+    },
+    {
+      "id": "4",
+      "first": "test",
+      "lastname": "user",
+      "age": 465,
+      "currency": "EUR",
+      "country": "Ukraine",
+      "city": "Moscow",
+      "username": "testuser",
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
   "article-ratings": [
@@ -717,13 +845,6 @@
       "rate": 3,
       "feedback": "",
       "id": "bcPnbbZ"
-    },
-    {
-      "userId": "1",
-      "articleId": "23",
-      "rate": 1,
-      "feedback": "",
-      "id": "DpHk2ea"
     }
   ],
   "profile-ratings": [
