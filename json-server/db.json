@@ -746,7 +746,12 @@
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true
       },
-      "avatar": "https://masterpiecer-images.s3.yandex.net/3c86b26d681111eeb8cdceda526c50ab:upscaled"
+      "avatar": "https://masterpiecer-images.s3.yandex.net/3c86b26d681111eeb8cdceda526c50ab:upscaled",
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      }
     },
     {
       "id": "2",
@@ -757,7 +762,12 @@
         "isArticleRatingEnabled": false,
         "isCounterEnabled": false
       },
-      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
+      "jsonSettings": {
+        "theme": "app_orange_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      }
     },
     {
       "id": "3",
