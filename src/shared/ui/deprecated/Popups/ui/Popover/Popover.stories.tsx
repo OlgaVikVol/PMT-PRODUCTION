@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Button } from '../../../deprecated/Button/Button';
+import { Button } from '../../../Button/Button';
 import { Popover } from './Popover';
 
 export default {
