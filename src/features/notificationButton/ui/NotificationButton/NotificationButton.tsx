@@ -7,7 +7,7 @@ import NotificationIcon from '@/shared/assets/icons/notification-20-20.svg';
 import { NotificationList } from '@/entities/Notification';
 import { Drawer } from '@/shared/ui/deprecated/Drawer';
 import cls from './NotificationButton.module.scss';
-import { Popover } from '@headlessui/react';
+import { Popover } from '@/shared/ui/deprecated/Popups';
 
 interface NotificationButtonProps {
     className?: string;
