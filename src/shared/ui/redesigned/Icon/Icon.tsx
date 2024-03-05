@@ -10,12 +10,12 @@ interface IconBaseProps extends SvgProps {
 }
 
 interface NonClickableIconProps extends IconBaseProps {
-  clickable?: false;
+    clickable?: false;
 }
 
 interface ClickableBaseProps extends IconBaseProps {
-  clickable: true;
-  onClick: () => void;
+    clickable: true;
+    onClick: () => void;
 }
 
 type IconProps = NonClickableIconProps | ClickableBaseProps;
