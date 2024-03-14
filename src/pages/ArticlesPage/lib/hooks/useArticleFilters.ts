@@ -29,7 +29,7 @@ export function useArticleFilters() {
 
     const debounceFetchData = useDebounce(fetchData, 500);
 
-    const onChancheView = useCallback(
+    const onChangeView = useCallback(
         (view: ArticleView) => {
             dispatch(articlesPageActions.setView(view));
         },
@@ -78,7 +78,7 @@ export function useArticleFilters() {
         order,
         search,
         type,
-        onChancheView,
+        onChangeView,
         onChangeSort,
         onChangeOrder,
         onChangeSearch,
