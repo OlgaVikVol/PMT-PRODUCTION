@@ -72,5 +72,7 @@
   "Welcome to the articles page": "Добро пожаловать на страницу статей",
   "Here you can search and view articles on various topics": "Здесь вы можете искать и просматривать статьи на различные темы",
   "article-details.The evaluation of the articles will appear soon": "Оценка статей скоро появится!",
-  "Sorted by": "Сортировать по:"
+  "Sorted by": "Сортировать по:",
+  "An error occurred while uploading the profile": "Произошла ошибка при загрузке профиля",
+  "Try refreshing the page": "Попробуйте обновить страницу"
 }
