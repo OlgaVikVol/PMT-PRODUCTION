@@ -30,20 +30,20 @@ export const CountrySelect = memo(({
     }, [onChange]);
 
     const props = {
-      onChange: onChangeHandler,
-      value,
-      defaultValue: t('Укажите страну'),
-      label: t('Укажите страну'),
-      items: options,
-      readonly,
-      direction: "top right" as const,
-    }
+        onChange: onChangeHandler,
+        value,
+        defaultValue: t('Укажите страну'),
+        label: t('Укажите страну'),
+        items: options,
+        readonly,
+        direction: 'top right' as const,
+    };
 
     return (
-<ToggleFeatures
-feature='isAppRedesigned'
-on={<ListBox {...props} />}
-off={<ListBoxDeprecated {...props} />}
-/>
+        <ToggleFeatures
+            feature="isAppRedesigned"
+            on={<ListBox {...props} />}
+            off={<ListBoxDeprecated {...props} />}
+        />
     );
 });

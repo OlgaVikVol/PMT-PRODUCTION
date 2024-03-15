@@ -64,10 +64,12 @@ module.exports = {
           'direction',
           'color',
           'variant',
+          "size",
         ],
       },
     ],
     'max-len': ['error', { ignoreComments: true, code: 200 }],
+    "consistent-return": "off",
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks

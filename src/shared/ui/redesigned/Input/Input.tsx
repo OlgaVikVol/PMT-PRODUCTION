@@ -34,7 +34,7 @@ export const Input = memo((props: inputProps) => {
         addonLeft,
         addonRight,
         label,
-        size = "m",
+        size = 'm',
         ...otherProps
     } = props;
     const ref = useRef<HTMLInputElement>(null);
@@ -86,13 +86,13 @@ export const Input = memo((props: inputProps) => {
     );
 
     if (label) {
-      return (
-          <HStack max gap="8">
-              <Text text={label} />
-              {input}
-          </HStack>
-      );
-  }
+        return (
+            <HStack max gap="8">
+                <Text text={label} />
+                {input}
+            </HStack>
+        );
+    }
 
-  return input;
+    return input;
 });
