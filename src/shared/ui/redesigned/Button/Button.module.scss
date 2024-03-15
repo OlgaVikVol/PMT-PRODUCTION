@@ -1,11 +1,34 @@
 .Button {
     cursor: pointer;
     color: var(--text-redesigned);
-    padding: 6px 15px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+}
 
-    &:hover {
-        color: var(--accent-redesigned);
-    }
+.Button:hover {
+    color: var(--accent-redesigned);
+}
+
+/* Перемещаем селекторы вне контекста .Button для устранения конфликта специфичности */
+.addonLeft svg,
+.addonRight svg {
+    color: var(--hint-redesigned);
+}
+
+.Button:hover .addonLeft svg,
+.Button:hover .addonRight svg {
+    color: var(--accent-redesigned);
+}
+
+/* Оставшийся CSS */
+.withAddon {
+    padding: 0 16px;
+}
+
+.addonLeft,
+.addonRight {
+    display: flex;
 }
 
 .clear {
@@ -19,7 +42,6 @@
     background: var(--light-bg-redesigned);
     border: none;
     outline: none;
-    padding: 8px 16px;
     border-radius: 34px;
 }
 
