@@ -4,24 +4,17 @@
     padding: 8px 16px;
     display: flex;
     align-items: center;
+
+    &:hover {
+        color: var(--accent-redesigned);
+
+        .addonLeft svg,
+        .addonRight svg {
+            color: var(--accent-redesigned);
+        }
+    }
 }
 
-.Button:hover {
-    color: var(--accent-redesigned);
-}
-
-/* Перемещаем селекторы вне контекста .Button для устранения конфликта специфичности */
-.addonLeft svg,
-.addonRight svg {
-    color: var(--hint-redesigned);
-}
-
-.Button:hover .addonLeft svg,
-.Button:hover .addonRight svg {
-    color: var(--accent-redesigned);
-}
-
-/* Оставшийся CSS */
 .withAddon {
     padding: 0 16px;
 }
@@ -43,6 +36,16 @@
     border: none;
     outline: none;
     border-radius: 34px;
+}
+
+.outline {
+    background: none;
+    border: 1px solid var(--icon-redesigned);
+    border-radius: 34px;
+
+    &:hover {
+        border: 1px solid var(--accent-redesigned);
+    }
 }
 
 .square {
