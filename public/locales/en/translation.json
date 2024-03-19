@@ -82,5 +82,8 @@
   "New": "New",
   "Old": "Old",
   "Interface type": "Interface type",
-  "Settings": "Settings"
+  "Settings": "Settings",
+  "{{count}} просмотров_zero": "{{count}} views",
+  "{{count}} просмотров_one": "{{count}} view",
+  "{{count}} просмотров_other": "{{count}} views"
 }
