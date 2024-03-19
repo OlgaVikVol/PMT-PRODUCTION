@@ -74,5 +74,10 @@
   "article-details.The evaluation of the articles will appear soon": "Оценка статей скоро появится!",
   "Sorted by": "Сортировать по:",
   "An error occurred while uploading the profile": "Произошла ошибка при загрузке профиля",
-  "Try refreshing the page": "Попробуйте обновить страницу"
+  "Try refreshing the page": "Попробуйте обновить страницу",
+  "User Settings": "Настройки пользователя",
+  "New": "Новый",
+  "Old": "Старый",
+  "Interface type": "Вариант интерфейса",
+  "Settings": "Настройки"
 }
