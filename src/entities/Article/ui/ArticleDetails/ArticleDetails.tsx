@@ -1,29 +1,40 @@
 import { useTranslation } from 'react-i18next';
 import { memo, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import {
+    DynamicModuleLoader,
+    ReducersList,
+} from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Text as TextDeprecated, TextAlign, TextSize } from '@/shared/ui/deprecated/Text';
+import {
+    Text as TextDeprecated,
+    TextAlign,
+    TextSize,
+} from '@/shared/ui/deprecated/Text';
+import { Text } from '@/shared/ui/redesigned/Text';
 import { Skeleton as SkeletonDeprecated } from '@/shared/ui/deprecated/Skeleton';
+import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton';
 import { Avatar } from '@/shared/ui/deprecated/Avatar';
 import EyeIcon from '@/shared/assets/icons/eye-20-20.svg';
 import CalendarIcon from '@/shared/assets/icons/calendar-20-20.svg';
 import { Icon } from '@/shared/ui/deprecated/Icon';
-import { getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoading } from '../../model/selectors/articleDetails';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 import cls from './ArticleDetails.module.scss';
-import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
+import {
+    getArticleDetailsData,
+    getArticleDetailsError,
+    getArticleDetailsIsLoading,
+} from '../../model/selectors/articleDetails';
 import { renderArticleBlock } from './renderBlock';
-import { Text } from '@/shared/ui/redesigned/Text';
+import { toggleFeatures, ToggleFeatures } from '@/shared/lib/features';
 import { AppImage } from '@/shared/ui/redesigned/AppImage';
-import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
-import { ToggleFeatures } from '@/shared/lib/features';
 
 interface ArticleDetailsProps {
-  className?: string;
-  id?: string;
+    className?: string;
+    id?: string;
 }
 
 const reducers: ReducersList = {
@@ -32,15 +43,10 @@ const reducers: ReducersList = {
 
 const Deprecated = () => {
     const article = useSelector(getArticleDetailsData);
-
     return (
         <>
             <HStack justify="center" max className={cls.avatarWrapper}>
-                <Avatar
-                    size={200}
-                    src={article?.img}
-                    className={cls.avatar}
-                />
+                <Avatar size={200} src={article?.img} className={cls.avatar} />
             </HStack>
             <VStack gap="4" max data-testid="ArticleDetails.Info">
                 <TextDeprecated
@@ -71,7 +77,13 @@ const Redesigned = () => {
             <Text title={article?.title} size="l" bold />
             <Text title={article?.subtitle} />
             <AppImage
-                fallback={<Skeleton width="100%" height={420} border="16px" />}
+                fallback={(
+                    <SkeletonRedesigned
+                        width="100%"
+                        height={420}
+                        border="16px"
+                    />
+                )}
                 src={article?.img}
                 className={cls.img}
             />
@@ -80,10 +92,31 @@ const Redesigned = () => {
     );
 };
 
+export const ArticleDetailsSkeleton = () => {
+    const Skeleton = toggleFeatures({
+        name: 'isAppRedesigned',
+        on: () => SkeletonRedesigned,
+        off: () => SkeletonDeprecated,
+    });
+    return (
+        <VStack gap="16" max>
+            <Skeleton
+                className={cls.avatar}
+                width={200}
+                height={200}
+                border="50%"
+            />
+            <Skeleton className={cls.title} width={300} height={32} />
+            <Skeleton className={cls.skeleton} width={600} height={24} />
+            <Skeleton className={cls.skeleton} width="100%" height={200} />
+            <Skeleton className={cls.skeleton} width="100%" height={200} />
+        </VStack>
+    );
+};
+
 export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     const { className, id } = props;
-    const { t } = useTranslation('article');
-    // @ts-ignore
+    const { t } = useTranslation();
     const dispatch = useAppDispatch();
     const isLoading = useSelector(getArticleDetailsIsLoading);
     const error = useSelector(getArticleDetailsError);
@@ -97,20 +130,12 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     let content;
 
     if (isLoading) {
-        content = (
-            <>
-                <SkeletonDeprecated className={cls.avatar} width={200} height={200} border="50%" />
-                <SkeletonDeprecated className={cls.title} width={300} height={32} />
-                <SkeletonDeprecated className={cls.skeleton} width={600} height={24} />
-                <SkeletonDeprecated className={cls.skeleton} width="100%" height={200} />
-                <SkeletonDeprecated className={cls.skeleton} width="100%" height={200} />
-            </>
-        );
+        content = <ArticleDetailsSkeleton />;
     } else if (error) {
         content = (
             <TextDeprecated
                 align={TextAlign.CENTER}
-                title={t('An error occurred while uploading the article')}
+                title={t('Произошла ошибка при загрузке статьи.')}
             />
         );
     } else {
@@ -125,7 +150,11 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <VStack gap="16" className={classNames(cls.ArticleDetails, {}, [className])}>
+            <VStack
+                gap="16"
+                max
+                className={classNames(cls.ArticleDetails, {}, [className])}
+            >
                 {content}
             </VStack>
         </DynamicModuleLoader>

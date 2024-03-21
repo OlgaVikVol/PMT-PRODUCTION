@@ -1,13 +1,27 @@
 .Button {
     cursor: pointer;
-    color: var(--primary-color);
-    padding: 6px 15px;
+    color: var(--text-redesigned);
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
 
     &:hover {
-        opacity: 0.8;
-        fill-opacity: 80%;
-        stroke-opacity: 80%;
+        color: var(--accent-redesigned);
+
+        .addonLeft svg,
+        .addonRight svg {
+            color: var(--accent-redesigned);
+        }
     }
+}
+
+.withAddon {
+    padding: 0 16px;
+}
+
+.addonLeft,
+.addonRight {
+    display: flex;
 }
 
 .clear {
@@ -17,67 +31,52 @@
     outline: none;
 }
 
-.clearInverted {
-    padding: 0;
+.filled {
+    background: var(--light-bg-redesigned);
     border: none;
-    background: none;
     outline: none;
-    color: var(--inverted-primary-color);
+    border-radius: 34px;
 }
 
 .outline {
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
     background: none;
-}
+    border: 2px solid var(--icon-redesigned);
+    border-radius: 34px;
 
-.outline_red {
-    border: 1px solid var(--red-light);
-    color: var(--red-light);
-    background: none;
-}
-
-.background {
-    background: var(--bg-color);
-    color: var(--primary-color);
-    border: none;
-}
-
-.backgroundInverted {
-    background: var(--inverted-bg-color);
-    color: var(--inverted-primary-color);
-    border: none;
+    &:hover {
+        border: 2px solid var(--accent-redesigned);
+    }
 }
 
 .square {
     padding: 0;
 }
 
-.square.size_m {
+.square.m {
     width: var(--font-line-m);
     height: var(--font-line-m);
 }
 
-.square.size_l {
+.square.l {
     width: var(--font-line-l);
     height: var(--font-line-l);
 }
 
-.square.size_xl {
+.square.xl {
     width: var(--font-line-xl);
     height: var(--font-line-xl);
 }
 
-.size_m {
-    font: var(--font-m);
+.m {
+    font: var(--font-m-redesigned);
 }
 
-.size_l {
-    font: var(--font-l);
+.l {
+    font: var(--font-l-redesigned);
 }
 
-.size_xl {
-    font: var(--font-xl);
+.xl {
+    font: var(--font-xl-redesigned);
 }
 
 .disabled {
