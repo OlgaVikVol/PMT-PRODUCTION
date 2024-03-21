@@ -18,8 +18,10 @@ function App() {
     const inited = useSelector(getUserInited);
 
     useEffect(() => {
-        dispatch(initAuthData());
-    }, [dispatch]);
+        if (!inited) {
+            dispatch(initAuthData());
+        }
+    }, [dispatch, inited]);
 
     if (!inited) {
         return <PageLoader />;
@@ -40,7 +42,10 @@ function App() {
                 </div>
             )}
             on={(
-                <div id="app" className={classNames('app_redesigned', {}, [theme])}>
+                <div
+                    id="app"
+                    className={classNames('app_redesigned', {}, [theme])}
+                >
                     <Suspense fallback="">
                         <MainLayout
                             header={<Navbar />}
