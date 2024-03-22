@@ -1,8 +1,11 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { User } from '../types/user';
 import { ThunkConfig } from '@/app/providers/StoreProvider';
-import { USER_LOCAL_STORAGE_KEY } from '@/shared/const/localstorage';
 import { getUserDataByIdQuery } from '../../api/userApi';
+import { User } from '../types/user';
+import {
+    LOCAL_STORAGE_LAST_DESIGN_KEY,
+    USER_LOCAL_STORAGE_KEY,
+} from '@/shared/const/localstorage';
 
 export const initAuthData = createAsyncThunk<User, void, ThunkConfig<string>>(
     'user/initAuthData',
@@ -16,11 +19,16 @@ export const initAuthData = createAsyncThunk<User, void, ThunkConfig<string>>(
         }
 
         try {
-            const responce = await dispatch(
+            const response = await dispatch(
                 getUserDataByIdQuery(userId),
             ).unwrap();
 
-            return responce;
+            localStorage.setItem(
+                LOCAL_STORAGE_LAST_DESIGN_KEY,
+                response.features?.isAppRedesigned ? 'new' : 'old',
+            );
+
+            return response;
         } catch (e) {
             console.log(e);
             return rejectWithValue('');
