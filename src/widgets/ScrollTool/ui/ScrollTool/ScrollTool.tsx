@@ -1,5 +1,4 @@
 import { memo } from 'react';
-import { classNames } from '@/shared/lib/classNames/classNames';
 import { VStack } from '@/shared/ui/redesigned/Stack';
 import { ScrollButton } from '@/features/ScrollButton';
 
